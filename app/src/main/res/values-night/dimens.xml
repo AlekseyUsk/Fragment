@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageWidth">100dp</dimen>
+    <dimen name="imageHeight">100dp</dimen>
+    <dimen name="paddingHorizontal">16dp</dimen>
+    <dimen name="paddingVertical">4dp</dimen>
+    <dimen name="TextMarginStart">130dp</dimen>
+    <dimen name="TextWidth">0dp</dimen>
+    <dimen name="MaterialCardViewcardElevation">0dp</dimen>
+    <dimen name="TextMarginTop">130dp</dimen>
+    <dimen name="TextPadding">10dp</dimen>
+    <dimen name="EditTextMarginTop">150dp</dimen>
+    <dimen name="ImageMarginTop">30dp</dimen>
+    <dimen name="EditTextPaddingTop">100dp</dimen>
+</resources>
