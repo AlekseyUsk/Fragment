@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fragment">
         <activity
+
+            android:name="ui.MainActivity2"
+            android:exported="false" />
+        <activity
             android:name="ui.NotesDetailsActivity"
             android:exported="false" />
         <activity

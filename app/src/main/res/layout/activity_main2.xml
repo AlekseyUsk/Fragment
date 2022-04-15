@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="ui.MainActivity2">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/btn_notes_info"
+        style="@style/button_notes_selected"
+        app:title="@string/Notes" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/image_notes"
+        style="@style/button_notes_selected"
+        app:title="@string/image_info_notes" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/image_notes_nissan"
+        style="@style/button_notes_selected"
+        app:title="@string/image_info_notes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container_mainActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

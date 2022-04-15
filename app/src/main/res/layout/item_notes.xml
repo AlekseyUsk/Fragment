@@ -5,13 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/Yellow"
     app:cardElevation="@dimen/MaterialCardViewcardElevation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/paddingHorizontal"
-        android:paddingVertical="@dimen/paddingVertical">
+        android:paddingVertical="@dimen/paddingVertical"
+        android:background="@color/Yellow">
 
         <ImageView
             android:id="@+id/icon"

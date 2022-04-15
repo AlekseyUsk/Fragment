@@ -1,10 +1,13 @@
 package ui;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -23,7 +26,8 @@ import domain.InMemoryNotesRepository;
 import domain.Notes;
 import ui.NotesDetailsActivity;
 
-public class NotesListFragment extends Fragment {
+public class NotesListFragment extends Fragment implements View.OnClickListener {
+
 
     public static final String NOTES_CLICKED_KEY = "NOTES_CLICKED_KEY";
     public static final String SELECTED_NOTES = "SELECTED_NOTES";
@@ -40,10 +44,12 @@ public class NotesListFragment extends Fragment {
 
     }
 
+
 //  todo 2 - после готовности юайчика вызываем метод onViewCreated и ищем наш контейнер
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
         super.onViewCreated(view, savedInstanceState);
 
         List<Notes> notes = InMemoryNotesRepository.getINSTANCE(requireContext()).getAll();
@@ -64,22 +70,27 @@ public class NotesListFragment extends Fragment {
                         Bundle bundle = new Bundle();
                         bundle.putParcelable(SELECTED_NOTES, note);
                         getParentFragmentManager()
-                                .setFragmentResult(NOTES_CLICKED_KEY,bundle);
+                                .setFragmentResult(NOTES_CLICKED_KEY, bundle);
                     } else {
                         NotesDetailsActivity.show(requireContext(), note);
                     }
+
                 }
+
             });
 
             ImageView icon = itemView.findViewById(R.id.icon);
             TextView title = itemView.findViewById(R.id.title);
             EditText date = itemView.findViewById(R.id.date);
 
+
             icon.setImageResource(note.getIcon());
             title.setText(note.getName());
-            // date.setText(note.getDate());// ОШИБКА НУЛ!!!!
 
             container.addView(itemView);
+
+
+
 
             itemView.findViewById(R.id.root).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -93,11 +104,20 @@ public class NotesListFragment extends Fragment {
                     } else {
                         NotesDetailsActivity.show(requireContext(), note);
                     }
+
                 }
 
             });
 
 
         }
+
+
     }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
 }
