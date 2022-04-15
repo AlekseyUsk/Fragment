@@ -8,4 +8,5 @@
     <string name="camaro">Камаро</string>
     <string name="Notes">ЗАМЕТКИ</string>
     <string name="RusNotes">Введите ваши заметки</string>
+    <string name="image_info_notes">ЗАГРУЗИТЬ РИСУНОК</string>
 </resources>
