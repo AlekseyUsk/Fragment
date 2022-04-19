@@ -40,11 +40,6 @@ public class NotesDetailsFragment extends Fragment {
         title = view.findViewById(R.id.title);
         date = view.findViewById(R.id.date);
 
-        //  Notes note =  getArguments().getParcelable(ARG_NOTES);
-
-        //  icon.setImageResource(note.getIcon());
-        //  title.setText(note.getName());
-        //  date.setText(note.getDate());
 
         getParentFragmentManager()
                 .setFragmentResultListener(NotesListFragment.NOTES_CLICKED_KEY, getViewLifecycleOwner(), new FragmentResultListener() {
