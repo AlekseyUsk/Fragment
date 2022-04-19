@@ -30,7 +30,6 @@ public class NotesDetailsActivity extends AppCompatActivity {
           Notes note = getIntent().getParcelableExtra(EXTRA_NOTES);
 
           NotesDetailsFragment notesDetailsFragment = new NotesDetailsFragment();
-          // new.Instance(note) как на уроке не ставиться горит крассным ! ОШИБКА Я НЕ ЗНАЮ ПОЧЕМУ?
 
           getSupportFragmentManager()
                   .beginTransaction()

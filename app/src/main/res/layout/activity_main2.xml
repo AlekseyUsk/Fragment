@@ -11,18 +11,22 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/btn_notes_info"
-        style="@style/button_notes_selected"
+        style="@style/Button_Notes_Selected"
         app:title="@string/Notes" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/image_notes"
-        style="@style/button_notes_selected"
+        style="@style/Button_Notes_Selected"
         app:title="@string/image_info_notes" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/image_notes_nissan"
-        style="@style/button_notes_selected"
+        style="@style/Button_Notes_Selected"
         app:title="@string/image_info_notes" />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/btn_array_list"
+        style="@style/Button_Notes_Selected"
+        app:title="@string/array_list" />
 
     <LinearLayout
         android:layout_width="match_parent"

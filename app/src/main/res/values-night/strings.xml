@@ -9,4 +9,10 @@
     <string name="Notes">ЗАМЕТКИ</string>
     <string name="RusNotes">Введите ваши заметки</string>
     <string name="image_info_notes">ЗАГРУЗИТЬ РИСУНОК</string>
+    <string name="arrayList">Список заметок</string>
+    <string name="auto">Автомобили</string>
+    <string name="auto_notes">Заметки по авто</string>
+    <string name="search">search</string>
+    <string name="item_one">ItemOne</string>
+    <string name="avto_info">ОПИСАНИЕ</string>
 </resources>
