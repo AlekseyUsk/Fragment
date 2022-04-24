@@ -18,6 +18,16 @@
     <string name="item_two">ItemTwo</string>
     <string name="item_one">ItemOne</string>
     <string name="avto_info">ОПИСАНИЕ</string>
+    <string name="snack_bar">SNACKBAR</string>
+    <string name="dialog">DIALOG</string>
+    <string name="custom_dialog">CUSTOM DIALOG</string>
+    <string name="Custom_dialog">ЗАГОЛОВОК</string>
+    <string name="dialog_list">List Dialog</string>
+    <string name="dialog_single_choice">Dialog Single Choice</string>
+    <string name="dialog_multiple_choice">Dialog Multiple Choice</string>
+    <string name="dialog_custom_dialog_fragment">Dialog custom Dialog fragment (сохранял состояние)</string>
+    <string name="buttonbottomview">ButtonBottomView</string>
+    <string name="button_bottom_view">ButtonBottomView</string>
 
     <string-array name="notes_list">
         <item>notes_one</item>

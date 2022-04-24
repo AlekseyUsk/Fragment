@@ -81,7 +81,8 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
-//region добавил в меню кнопки при нажатии на select_fragment_activity2 запускаю фрагмент с собственным меню
+
+    //region добавил в меню кнопки при нажатии на select_fragment_activity2 запускаю фрагмент с собственным меню
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main_activity2, menu);

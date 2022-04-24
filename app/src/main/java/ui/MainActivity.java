@@ -17,6 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 
 
 import fm.MyFragmentInfo3;
+import fmNotification.NotificationFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_activity:
                 Toast.makeText(this, "open menu", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container, new NotificationFragment())
+                        .commit();
                 break;
             case R.id.menu_activity_search:
                 Toast.makeText(this, "search", Toast.LENGTH_SHORT).show();
