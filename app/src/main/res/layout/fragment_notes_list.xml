@@ -14,15 +14,34 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             app:title="@string/Notes" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/ButtonSelect"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:text="ПЕРЕКЛЮЧЕНИЕ"
-            android:textSize="20sp"
-            android:onClick="Selected"/>
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/margin_start_activity">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ButtonSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:onClick="Selected"
+                android:text="@string/SelectedNotesList"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ButtonSelectNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="Selected"
+                android:text="navigation"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"/>
+
+        </LinearLayout>
+
+
 
 
     </com.google.android.material.appbar.AppBarLayout>

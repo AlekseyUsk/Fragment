@@ -60,7 +60,7 @@ public class NotificationFragment extends Fragment {
 //вызываем с app.compact библиотеки new AlertDialog.Builder()
                 new AlertDialog.Builder(requireContext())
                         // указываем че мы хотим поместить в диалог и добавляем кнопки от 3х
-                        .setTitle("Заголовок")
+                        .setTitle(R.string.Heading)
                         .setMessage("Вы действительно хотите выйти из приложения?")
                         .setIcon(R.drawable.camaro)
                         .setCancelable(false) // запрещает скрываться сообщению при нажатии за пределы диалога

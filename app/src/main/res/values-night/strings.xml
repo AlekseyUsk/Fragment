@@ -24,4 +24,9 @@
     <string name="dialog_custom_dialog_fragment">Dialog custom Dialog fragment (сохранял состояние)</string>
     <string name="buttonbottomview">ButtonBottomView</string>
     <string name="button_bottom_view">ButtonBottomView</string>
+    <string name="Heading">Заголовок</string>
+    <string name="MyNotes">bottom_action_navigation</string>
+    <string name="info">Info</string>
+    <string name="info_bottom_fr">Тут пока пусто</string>
+    <string name="SelectedNotesList">Notes List</string>
 </resources>

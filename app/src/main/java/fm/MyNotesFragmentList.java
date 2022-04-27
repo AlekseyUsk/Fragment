@@ -1,5 +1,6 @@
 package fm;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,14 +15,12 @@ import android.widget.TextView;
 
 import com.example.fragment.R;
 
-import java.util.zip.Inflater;
-
-public class MyFragmentList extends Fragment {
+public class MyNotesFragmentList extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_list, container, false);
+        return inflater.inflate(R.layout.fragment_notes_my_list, container, false);
     }
 
     @Override
@@ -32,12 +31,12 @@ public class MyFragmentList extends Fragment {
 
     private void initList(View view) {
         LinearLayout layoutView = (LinearLayout) view;
-        String[] notes_list = getResources().getStringArray(R.array.notes_list);
-        for (String notes : notes_list) {
+        String[] notesList = getResources().getStringArray(R.array.notesList);
+        for (String notes : notesList) {
             TextView textView = new TextView(getContext());
             textView.setText(notes);
             textView.setTextSize(30);
-            layoutView.addView(textView);  // ? неотображается на экране почему то список из ресурсов
+            layoutView.addView(textView);
         }
 
     }

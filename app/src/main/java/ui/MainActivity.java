@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import uiBottomNavigation.MainActivityBottomNavigation;
 import com.example.fragment.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -65,12 +66,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //region переключение на MainActivity2
+    //region переключение на MainActivity2 и ActivityBottomNavigation
     public void Selected(View view) {
         switch (view.getId()) {
             case R.id.ButtonSelect:
                 Intent intent = new Intent(this, MainActivity2.class);
                 startActivity(intent);
+                break;
+            case R.id.ButtonSelectNavigation:
+                Intent intent1 = new Intent(this, MainActivityBottomNavigation.class);
+                startActivity(intent1);
                 break;
         }
     }

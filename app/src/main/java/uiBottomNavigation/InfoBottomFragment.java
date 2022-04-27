@@ -1,4 +1,4 @@
-package fm;
+package uiBottomNavigation;
 
 import android.os.Bundle;
 
@@ -10,11 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.fragment.R;
 
-public class MyFragmentInfo extends Fragment {
+public class InfoBottomFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_info, container, false);
+
+        return inflater.inflate(R.layout.fragment_info_bottom, container, false);
     }
 }

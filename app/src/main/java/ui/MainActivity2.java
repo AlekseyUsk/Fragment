@@ -5,18 +5,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import com.example.fragment.R;
 
-import fm.MyFragmentInfo;
 import fm.MyFragmentInfo2;
 import fm.MyFragmentInfo3;
-import fm.MyFragmentList;
+import fm.MyNotesFragmentList;
 import fm.MyFragmentMenuActivity2;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -27,21 +26,6 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        MyFragmentList myFragmentList = new MyFragmentList();// обьект класса может и ненужен по книге делал такто
-
-        findViewById(R.id.btn_notes_info).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.btn_notes_info:
-
-                        getSupportFragmentManager()
-                                .beginTransaction()
-                                .replace(R.id.container_mainActivity2, new MyFragmentInfo())
-                                .commit();
-                }
-            }
-        });
         findViewById(R.id.image_notes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,7 +59,7 @@ public class MainActivity2 extends AppCompatActivity {
                     case R.id.btn_array_list:
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.container_mainActivity2, new MyFragmentList())
+                                .replace(R.id.container_mainActivity2, new MyNotesFragmentList())
                                 .commit();
                 }
             }
@@ -103,7 +87,8 @@ public class MainActivity2 extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-//endregion
+
+    //endregion
 
 }
 
