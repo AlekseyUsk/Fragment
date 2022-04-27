@@ -15,4 +15,12 @@
     <dimen name="TextSize">30sp</dimen>
     <dimen name="margin_notes_btn">5dp</dimen>
     <dimen name="custom_padding">25dp</dimen>
+    <dimen name="margin_start_activity">5dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="layout_margin_vertical">4dp</dimen>
+    <dimen name="layout_margin_top">10dp</dimen>
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="padding_horizontal">18dp</dimen>
+    <dimen name="layout_marg_vertical">10dp</dimen>
 </resources>

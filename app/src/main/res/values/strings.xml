@@ -28,13 +28,19 @@
     <string name="dialog_custom_dialog_fragment">Dialog custom Dialog fragment (сохранял состояние)</string>
     <string name="buttonbottomview">ButtonBottomView</string>
     <string name="button_bottom_view">ButtonBottomView</string>
+    <string name="Heading">Заголовок</string>
+    <string name="MyNotes">bottom_action_navigation</string>
+    <string name="notes_bottom_list">Notes List</string>
+    <string name="info">Info</string>
+    <string name="info_bottom_fr">Тут пока пусто</string>
+    <string name="SelectedNotesList">Notes List</string>
 
-    <string-array name="notes_list">
-        <item>notes_one</item>
-        <item>notes_two</item>
-        <item>notes_three</item>
-        <item>notes_for</item>
-        <item>notes_five</item>
+    <string-array name="notesList">
+        <item>notesOne</item>
+        <item>notesTwo</item>
+        <item>notesThree</item>
+        <item>notesFor</item>
+        <item>notesFive</item>
     </string-array>
 
 

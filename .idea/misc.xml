@@ -3,18 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout-land/activity_main.xml" value="0.2453125" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_main_bottom_navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_main_navigation.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_notes_details.xml" value="0.196875" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/custom_dialog.xml" value="0.4282238442822384" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/custom_dialog_view.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_bottom_view.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_custom_view_dialog.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_info_bottom.xml" value="0.196875" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_my_info.xml" value="0.196875" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_my_info2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_my_info3.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_my_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_my_menu_activity2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_bottom_list.xml" value="0.33" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_details.xml" value="0.196875" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_list.xml" value="0.196875" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_my_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/item_note.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/item_notes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/menu/bottom_navigation.xml" value="0.196875" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/menu/menu_drawer.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/menu/menu_fragment.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/menu/menu_main_activity.xml" value="0.2833333333333333" />
