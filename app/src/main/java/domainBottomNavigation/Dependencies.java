@@ -1,4 +1,4 @@
-package domainBottomNavigation.di;
+package domainBottomNavigation;
 
 import domainBottomNavigation.InMemoryNoteRepositoryNavigation;
 import domainBottomNavigation.NotesRepositoryNavigation;

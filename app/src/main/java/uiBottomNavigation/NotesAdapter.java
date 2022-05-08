@@ -59,6 +59,13 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         return data.size();//указываем сколько элементов будем возвращать
     }
 
+    public int addNote(Note note) { // добавил метод в адаптер для обновления коллекции после добавления заметки
+        data.add(note); // положил заметку
+
+        return data.size() -1 ; // она теперь возвращает int индекса последнего элемента
+
+    }
+
     class NotesViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;
