@@ -5,24 +5,22 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ProgressBar;
 
 import com.example.fragment.R;
 
-import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.Locale;
 
 import domainBottomNavigation.Note;
-import domainBottomNavigation.di.Dependencies;
+import domainBottomNavigation.Callback;
+import domainBottomNavigation.Dependencies;
 
 public class NotesBottomListFragment extends Fragment {
 
@@ -45,13 +43,58 @@ public class NotesBottomListFragment extends Fragment {
         NotesAdapter notesAdapter = new NotesAdapter();//создал экземпляр класса
         notesList.setAdapter(notesAdapter);// и даем RecyclerView адаптер (из класса NotesAdapter)
 
+        getParentFragmentManager()
+                .setFragmentResultListener(AddNoteBottomSheetDialogFragment.KEY_RESULT, getViewLifecycleOwner(), new FragmentResultListener() {
+                    @Override
+                    public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
 
-        List<Note> notes = Dependencies.NOTES_REPOSITORY_NAVIGATION.getAll();//получаю список заметок через Dependencies.NOTES_REPOSITORY_NAVIGATION
+                        Note note = result.getParcelable(AddNoteBottomSheetDialogFragment.ARG_NOTE);//получили заметку
+                        //теперь нужно после того как добавил перерисовать ее и отобразить (обновить коллекцию) она внутри адаптера -->
+                        int index = notesAdapter.addNote(note);
 
-        notesAdapter.setData(notes);//передал адаптеру список заметок ( метод set.Date )
+                        notesAdapter.notifyItemInserted(index); //говорим обнови ставку эдемента оп такой-то позиции
 
-        notesAdapter.notifyDataSetChanged();//говорим адаптеру что данные изменились, процессор перерисовки запускается и рисуется новый список
-        // я понял что экран вниз пролистал появляются новые к примеру как тут список заметок и это обеспечивает менеенагруженность системы приложения
+
+                    }
+                });
+
+
+        ProgressBar progressBar = view.findViewById(R.id.progressBar);//крутилка
+        progressBar.setVisibility(view.VISIBLE);
+
+//кнопка добавления заметок -->
+        view.findViewById(R.id.floating_add_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                new AddNoteBottomSheetDialogFragment()
+                        .show(getParentFragmentManager(), "uiBottomNavigation.AddNoteBottomSheetDialogFragment");
+
+            }
+        });
+
+
+        Dependencies.NOTES_REPOSITORY_NAVIGATION.getAllNuv(new Callback<List<Note>>() { // запросили получение списка заметок
+            @Override
+            public void onSuccess(List<Note> data) {
+                notesAdapter.setData(data);
+
+                notesAdapter.notifyDataSetChanged();//говорим адаптеру что данные изменились, процессор перерисовки запускается и рисуется новый список
+                // я понял что экран вниз пролистал появляются новые к примеру как тут список заметок и это обеспечивает менеенагруженность системы приложения
+
+                progressBar.setVisibility(view.GONE);//крутилка
+            }
+
+            @Override
+            public void onError(Throwable exception) {
+
+
+                progressBar.setVisibility(view.GONE);
+
+            }
+        });
+
+
     }
 
 

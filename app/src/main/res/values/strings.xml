@@ -34,6 +34,9 @@
     <string name="info">Info</string>
     <string name="info_bottom_fr">Тут пока пусто</string>
     <string name="SelectedNotesList">Notes List</string>
+    <string name="message">message</string>
+    <string name="save">save</string>
+    <string name="title">title</string>
 
     <string-array name="notesList">
         <item>notesOne</item>

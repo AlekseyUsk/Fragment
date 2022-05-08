@@ -12,6 +12,7 @@
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/activity_notes_details.xml" value="0.196875" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/custom_dialog.xml" value="0.4282238442822384" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/custom_dialog_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_add_note_dialog_sheet_bottom.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_bottom_view.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_custom_view_dialog.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_info_bottom.xml" value="0.196875" />
@@ -25,6 +26,7 @@
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_list.xml" value="0.196875" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notes_my_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/fragment_notification.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/item_note.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/layout/item_notes.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/meyso/Fragment/app/src/main/res/menu/bottom_navigation.xml" value="0.196875" />
