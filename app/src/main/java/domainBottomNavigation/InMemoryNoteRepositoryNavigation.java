@@ -46,7 +46,7 @@ public class InMemoryNoteRepositoryNavigation implements NotesRepositoryNavigati
                 } catch (InterruptedException interruptedException) {
                     interruptedException.printStackTrace();
                 }
-                Note note = new Note(UUID.randomUUID(), toString(), title, message, new Date());
+                Note note = new Note(UUID.randomUUID(),  title, message, new Date());
 
                 data.add(note);
 

@@ -45,7 +45,7 @@ public class AddNoteBottomSheetDialogFragment extends BottomSheetDialogFragment 
 
                 btnSave.setEnabled(false);
 // добавляем заметку и сохраняем--->
-                Dependencies.NOTES_REPOSITORY_NAVIGATION.addNoteNuv(title.getText(), message.getText(), toString(), new Callback<Note>() {
+                Dependencies.getNotesRepository(requireContext()).addNoteNuv(title.getText(), message.getText(), toString(), new Callback<Note>() {
                     @Override
                     public void onSuccess(Note data) {
 // добавляем в бандл и передаем --->
@@ -53,7 +53,7 @@ public class AddNoteBottomSheetDialogFragment extends BottomSheetDialogFragment 
                         bundle.putParcelable(ARG_NOTE, data);
 
                         getParentFragmentManager().setFragmentResult(KEY_RESULT, bundle);
-// выполнили Бтеперь это дело надо отловить в NotesBottomListFragment
+// выполнили теперь это дело надо отловить в NotesBottomListFragment
 
                         btnSave.setEnabled(true);
 
@@ -65,6 +65,8 @@ public class AddNoteBottomSheetDialogFragment extends BottomSheetDialogFragment 
 
 
                         btnSave.setEnabled(true);
+
+                        dismiss();
                     }
                 });
 

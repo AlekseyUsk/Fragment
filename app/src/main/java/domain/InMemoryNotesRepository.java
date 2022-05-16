@@ -1,10 +1,15 @@
 package domain;
 
 import android.content.Context;
+import android.text.Editable;
 
 import com.example.fragment.R;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import domainBottomNavigation.Callback;
+import domainBottomNavigation.Note;
 
 /**
  * КЛАСС КОНКРЕТНОЙ РЕАЛИЗАЦИИ СО СПИСКОМ КОТОРЫЙ МЫ БУДЕМ ВОЗВРАЩАТЬ
@@ -40,6 +45,16 @@ public class InMemoryNotesRepository implements NotesRepository {
 
     @Override
     public void add(Notes note) {
+
+    }
+
+    @Override
+    public void addNoteNuv(Editable text, Editable text1, String toString, Callback<Note> noteCallback) {
+
+    }
+
+    @Override
+    public void getAllNuv(Callback<List<Note>> listCallback) {
 
     }
 }
