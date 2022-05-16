@@ -74,7 +74,7 @@ public class NotesBottomListFragment extends Fragment {
         });
 
 
-        Dependencies.NOTES_REPOSITORY_NAVIGATION.getAllNuv(new Callback<List<Note>>() { // запросили получение списка заметок
+        Dependencies.getNotesRepository(requireContext()).getAllNuv(new Callback<List<Note>>() { // запросили получение списка заметок
             @Override
             public void onSuccess(List<Note> data) {
                 notesAdapter.setData(data);

@@ -17,7 +17,7 @@ public class Note implements Parcelable {
     private Date createdAt; // дата создания заметки
 
 
-    public Note(UUID uuid, String id, String title, String message, Date createdAt) {
+    public Note(UUID uuid, String id, String title, Date createdAt) {
         this.id = id;
         this.title = title;
         this.message = message;
@@ -41,6 +41,9 @@ public class Note implements Parcelable {
             return new Note[size];
         }
     };
+
+    public Note(String toString, String title, String message, Date createdAt) {
+    }
 
     public String getId() {
         return id;
